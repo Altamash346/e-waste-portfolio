@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohd. Altamash Ansari | E-Waste & E-Management Portfolio</title>
+<meta name="description" content="Student e-portfolio on E-Waste & E-Management by Mohd. Altamash Ansari, B.Tech Information Technology, Vidyalankar Institute of Technology.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- Scroll animation -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= LOADING SCREEN ================= -->
+<div id="loadingScreen">
+  <div class="loader-inner">
+    <div class="loader-icon">♻️</div>
+    <h1>E-Portfolio</h1>
+    <p>Loading a greener digital journey...</p>
+  </div>
+</div>
+
+<!-- ================= PARTICLES (background, subtle) ================= -->
+<div id="particles"></div>
+
+<!-- ================= NAVIGATION ================= -->
+<header>
+  <nav class="navbar">
+    <a href="#home" class="logo">♻️ EcoPortfolio</a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+      <li><a href="#ewaste" class="nav-link" data-section="ewaste">E-Waste</a></li>
+      <li><a href="#activities" class="nav-link" data-section="activities">Activities</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="darkToggle" class="icon-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <button id="hamburger" class="icon-btn hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+  <div class="hero-container">
+    <div class="hero-text" data-aos="fade-right">
+      <span class="badge">🌱 E-WASTE & E-MANAGEMENT PORTFOLIO</span>
+      <h1 class="hero-heading">Technology with a <span class="gradient-text">Greener</span> Purpose.</h1>
+      <p class="hero-sub">Building Technology for a Greener Tomorrow.</p>
+      <p class="hero-para">Welcome to my e-portfolio, where technology and sustainability come together. Explore my learning journey, activities, and work related to responsible electronic-waste management.</p>
+
+      <div class="hero-buttons">
+        <a href="#about" class="btn btn-primary">Explore Portfolio <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#activities" class="btn btn-outline">View Activities</a>
+      </div>
+    </div>
+
+    <div class="hero-visual" data-aos="fade-left">
+      <div class="orb-glow"></div>
+      <div class="earth-visual">
+        <div class="earth-core">🌍</div>
+        <div class="orbit-ring ring-1"><span class="orbit-icon">♻️</span></div>
+        <div class="orbit-ring ring-2"><span class="orbit-icon">🍃</span></div>
+        <div class="orbit-ring ring-3"><span class="orbit-icon">💻</span></div>
+      </div>
+      <span class="leaf leaf-1">🍃</span>
+      <span class="leaf leaf-2">🍃</span>
+      <span class="leaf leaf-3">🍃</span>
+      <div class="mini-badge badge-1">🌱 Sustainable</div>
+      <div class="mini-badge badge-2">♻️ Recyclable</div>
+      <div class="mini-badge badge-3">💚 Eco-Tech</div>
+    </div>
+  </div>
+  <div class="scroll-indicator"><span></span></div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-image" data-aos="fade-right">
+        <div class="avatar-frame">
+          <img src="assets/images/profile.jpg" alt="Mohd. Altamash Ansari" id="profileImg"
+               onerror="this.onerror=null; const fb=document.getElementById('avatarFallback'); fb.style.display='flex'; this.replaceWith(fb);">
+        </div>
+        <div id="avatarFallback" class="avatar-fallback" style="display:none;">
+          <span>MA</span>
+        </div>
+      </div>
+
+      <div class="about-content" data-aos="fade-left">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+        <p>Hello! I'm <strong>Mohd. Altamash Ansari</strong>, currently pursuing <strong>B.Tech in Information Technology</strong> at <strong>Vidyalankar Institute of Technology, Mumbai</strong>.</p>
+        <p>I am interested in Backend Development, Artificial Intelligence, Machine Learning and Software Development.</p>
+        <p>This e-portfolio showcases my learning, activities and understanding of E-Waste and Sustainable Engineering.</p>
+
+        <div class="chip-row">
+          <span class="chip">Technology</span>
+          <span class="chip">Artificial Intelligence</span>
+          <span class="chip">Machine Learning</span>
+          <span class="chip">Backend Development</span>
+          <span class="chip">Sustainability</span>
+          <span class="chip">E-Waste Awareness</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="section education">
+  <div class="section-inner">
+    <div class="section-head" data-aos="fade-up">
+      <span class="section-tag">Education</span>
+      <h2 class="section-title">My Academic Journey</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3>SSC</h3>
+          <p>Secondary School Certificate</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3>HSC</h3>
+          <p>Higher Secondary Certificate</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3>B.Tech — Information Technology</h3>
+          <p>Vidyalankar Institute of Technology, Mumbai</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= E-WASTE & E-MANAGEMENT ================= -->
+<section id="ewaste" class="section ewaste">
+  <div class="section-inner">
+    <div class="section-head" data-aos="fade-up">
+      <span class="section-tag">E-Waste & E-Management</span>
+      <h2 class="section-title">Understanding the Subject</h2>
+    </div>
+
+    <div class="card-grid">
+      <div class="info-card" data-aos="fade-up">
+        <div class="info-icon">♻️</div>
+        <h3>What is E-Waste?</h3>
+        <p>Electronic waste refers to discarded electrical or electronic devices — phones, computers, batteries and other equipment that have reached the end of their useful life.</p>
+      </div>
+      <div class="info-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="info-icon">🌍</div>
+        <h3>Environmental Impact</h3>
+        <p>Improper disposal of e-waste can release hazardous substances into soil, water and air, making responsible handling essential for environmental health.</p>
+      </div>
+      <div class="info-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="info-icon">📱</div>
+        <h3>Sources of E-Waste</h3>
+        <p>Common sources include mobile phones, laptops, household appliances, batteries and IT equipment that are upgraded, replaced or discarded.</p>
+      </div>
+      <div class="info-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="info-icon">🔧</div>
+        <h3>Responsible Management</h3>
+        <p>Proper e-waste management involves collection, segregation, safe recycling and disposal through authorized channels rather than informal handling.</p>
+      </div>
+      <div class="info-card" data-aos="fade-up" data-aos-delay="320">
+        <div class="info-icon">♻️</div>
+        <h3>Reduce, Reuse, Repair, Recycle</h3>
+        <p>Extending device life through repair and reuse, and recycling responsibly when devices are no longer usable, reduces overall e-waste generation.</p>
+      </div>
+      <div class="info-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="info-icon">🌱</div>
+        <h3>Sustainable Technology</h3>
+        <p>Choosing durable products, supporting take-back programs and staying informed are ways technology users can act more sustainably.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= E-WASTE AWARENESS ================= -->
+<section id="awareness" class="section awareness">
+  <div class="section-inner">
+    <div class="section-head" data-aos="fade-up">
+      <span class="section-tag">Awareness</span>
+      <h2 class="section-title">Key Concepts to Know</h2>
+    </div>
+
+    <div class="awareness-grid">
+      <div class="awareness-card" data-aos="fade-up">
+        <i class="fa-solid fa-microchip"></i>
+        <h4>What counts as electronic waste?</h4>
+        <p>Any device with a plug, battery or circuitry that is no longer wanted or working qualifies as e-waste.</p>
+      </div>
+      <div class="awareness-card" data-aos="fade-up" data-aos-delay="80">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <h4>Why responsible disposal matters</h4>
+        <p>Unsafe disposal can expose handlers and the environment to hazardous materials found inside electronics.</p>
+      </div>
+      <div class="awareness-card" data-aos="fade-up" data-aos-delay="160">
+        <i class="fa-solid fa-recycle"></i>
+        <h4>Recycling and recovery</h4>
+        <p>Authorized recyclers can recover valuable materials from old electronics while safely managing hazardous components.</p>
+      </div>
+      <div class="awareness-card" data-aos="fade-up" data-aos-delay="240">
+        <i class="fa-solid fa-battery-three-quarters"></i>
+        <h4>Extending the life of electronics</h4>
+        <p>Repairing, upgrading or donating working devices delays the point at which they become waste.</p>
+      </div>
+      <div class="awareness-card" data-aos="fade-up" data-aos-delay="320">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h4>Responsible consumption</h4>
+        <p>Buying only what's needed and choosing durable products reduces long-term electronic waste generation.</p>
+      </div>
+      <div class="awareness-card" data-aos="fade-up" data-aos-delay="400">
+        <i class="fa-solid fa-leaf"></i>
+        <h4>Digital sustainability</h4>
+        <p>Sustainable technology use includes mindful upgrades, energy-conscious habits and supporting circular-economy practices.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACTIVITIES ================= -->
+<section id="activities" class="section activities">
+  <div class="section-inner">
+    <div class="section-head" data-aos="fade-up">
+      <span class="section-tag">Activities</span>
+      <h2 class="section-title">Hands-on Learning</h2>
+    </div>
+
+    <div class="activity-grid">
+      <!-- Activity 1 -->
+      <div class="activity-card activity-1" data-aos="fade-up">
+        <div class="activity-icon">📜</div>
+        <span class="activity-number">Activity 01</span>
+        <h3>E-Waste Pledge</h3>
+        <p class="activity-subtitle">Activity 1 — E-Waste Pledge</p>
+        <p>My pledge and commitment towards responsible technology use, sustainability and proper e-waste practices.</p>
+        <div class="doc-actions" data-view="assets/activities/pledge.pdf" data-name="pledge.pdf">
+          <a href="assets/activities/pledge.pdf" target="_blank" rel="noopener" class="btn btn-small btn-primary doc-view">View Pledge</a>
+          <a href="assets/activities/pledge.pdf" download class="btn btn-small btn-outline doc-download">Download Pledge</a>
+        </div>
+        <p class="doc-missing-note" hidden>⚠ PDF not added yet — place <code>pledge.pdf</code> in <code>assets/activities/</code>.</p>
+      </div>
+
+      <!-- Activity 2 -->
+      <div class="activity-card activity-2" data-aos="fade-up" data-aos-delay="120">
+        <div class="activity-icon">🧩</div>
+        <span class="activity-number">Activity 02</span>
+        <h3>E-Waste Mastermind</h3>
+        <p class="activity-subtitle">E-Waste Mastermind — Crossword</p>
+        <p>A crossword activity designed around E-Waste Management concepts and awareness.</p>
+        <div class="doc-actions" data-view="assets/activities/crossword.pdf" data-name="crossword.pdf">
+          <a href="assets/activities/crossword.pdf" target="_blank" rel="noopener" class="btn btn-small btn-primary doc-view">View Crossword</a>
+          <a href="assets/activities/crossword.pdf" download class="btn btn-small btn-outline doc-download">Download Crossword</a>
+        </div>
+        <p class="doc-missing-note" hidden>⚠ PDF not added yet — place <code>crossword.pdf</code> in <code>assets/activities/</code>.</p>
+      </div>
+
+      <!-- Activity 3 -->
+      <div class="activity-card activity-3" data-aos="fade-up" data-aos-delay="240">
+        <div class="activity-icon">🏢</div>
+        <span class="activity-number">Activity 03</span>
+        <h3>Kerala Company Activity</h3>
+        <p class="activity-subtitle">Clean Kerala Company</p>
+        <p>Clean Kerala Company: Building a waste-free Kerala model for scientific waste management.</p>
+        <div class="doc-actions" data-view="assets/activities/kerala1.jpg" data-name="kerala1.jpg">
+          <a href="assets/activities/kerala1.jpg" target="_blank" rel="noopener" class="btn btn-small btn-primary doc-view">View Photo 1</a>
+          <a href="assets/activities/kerala2.jpg" target="_blank" rel="noopener" class="btn btn-small btn-primary doc-view">View Photo 2</a>
+        </div>
+        <p class="doc-missing-note" hidden>⚠ Image not added yet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section skills">
+  <div class="section-inner">
+    <div class="section-head" data-aos="fade-up">
+      <span class="section-tag">Skills</span>
+      <h2 class="section-title">What I Work With</h2>
+      <p class="section-note">Edit the <code>data-percent</code> value on each <code>.skill-item</code> in the HTML to change levels.</p>
+    </div>
+
+    <div class="skills-grid" data-aos="fade-up">
+      <!-- data-percent is easy to edit per skill -->
+      <div class="skill-item" data-percent="80"><div class="skill-top"><span>HTML</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      <div class="skill-item" data-percent="75"><div class="skill-top"><span>CSS</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      <div class="skill-item" data-percent="70"><div class="skill-top"><span>JavaScript</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      <div class="skill-item" data-percent="75"><div class="skill-top"><span>Python</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      <div class="skill-item" data-percent="65"><div class="skill-top"><span>Java</span><span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      <div class="skill-item" data-percent="55"><div class="skill-top"><span>C++</span><span class="skill-pct">55%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      <div class="skill-item" data-percent="60"><div class="skill-top"><span>Machine Learning</span><span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      <div class="skill-item" data-percent="60"><div class="skill-top"><span>Backend Development</span><span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      <div class="skill-item" data-percent="55"><div class="skill-top"><span>MongoDB</span><span class="skill-pct">55%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      <div class="skill-item" data-percent="55"><div class="skill-top"><span>Node.js</span><span class="skill-pct">55%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section projects">
+  <div class="section-inner">
+    <div class="section-head" data-aos="fade-up">
+      <span class="section-tag">Projects</span>
+      <h2 class="section-title">Things I've Built</h2>
+    </div>
+
+    <div class="project-grid">
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+        <h3>AI Student Buddy</h3>
+        <p>An assistant concept aimed at helping students with study support and daily academic tasks.</p>
+        <div class="tag-row"><span class="tag">AI</span><span class="tag">Python</span></div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="project-icon"><i class="fa-solid fa-book"></i></div>
+        <h3>Smart Library</h3>
+        <p>A digital library concept for managing and accessing books and resources efficiently.</p>
+        <div class="tag-row"><span class="tag">Backend</span><span class="tag">Database</span></div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="project-icon"><i class="fa-solid fa-seedling"></i></div>
+        <h3>Crop Disease Detection</h3>
+        <p>A machine learning based approach to identifying crop diseases from plant images.</p>
+        <div class="tag-row"><span class="tag">Machine Learning</span><span class="tag">Python</span></div>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="project-icon"><i class="fa-solid fa-globe"></i></div>
+        <h3>E-Waste Awareness Website</h3>
+        <p>A website concept dedicated to spreading awareness about responsible e-waste management.</p>
+        <div class="tag-row"><span class="tag">HTML/CSS/JS</span><span class="tag">Sustainability</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SDG / SUSTAINABILITY ================= -->
+<section id="sdg" class="section sdg">
+  <div class="section-inner">
+    <div class="section-head" data-aos="fade-up">
+      <span class="section-tag">Sustainability</span>
+      <h2 class="section-title">Aligned with Global Goals</h2>
+      <p class="section-note">Responsible electronic-waste management connects directly to these UN Sustainable Development Goals.</p>
+    </div>
+
+    <div class="sdg-grid">
+      <div class="sdg-circle" data-aos="zoom-in">
+        <div class="sdg-ring"><span>11</span></div>
+        <h4>Sustainable Cities and Communities</h4>
+        <p>Proper e-waste collection and disposal systems support cleaner, more livable urban environments.</p>
+      </div>
+      <div class="sdg-circle" data-aos="zoom-in" data-aos-delay="100">
+        <div class="sdg-ring"><span>12</span></div>
+        <h4>Responsible Consumption and Production</h4>
+        <p>Mindful purchasing and recycling of electronics reduces waste and supports circular use of resources.</p>
+      </div>
+      <div class="sdg-circle" data-aos="zoom-in" data-aos-delay="200">
+        <div class="sdg-ring"><span>13</span></div>
+        <h4>Climate Action</h4>
+        <p>Reducing e-waste and recovering materials responsibly lowers the environmental footprint of technology.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section contact">
+  <div class="section-inner">
+    <div class="section-head" data-aos="fade-up">
+      <span class="section-tag">Contact</span>
+      <h2 class="section-title">Let's Build a Greener Digital Future</h2>
+    </div>
+
+    <div class="contact-grid" data-aos="fade-up">
+      <div class="contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <div><span class="contact-label">Email</span><span class="contact-value">[ADD YOUR EMAIL]</span></div>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <div><span class="contact-label">Phone</span><span class="contact-value">[ADD YOUR PHONE]</span></div>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <div><span class="contact-label">Location</span><span class="contact-value">Mumbai, India</span></div>
+      </div>
+      <div class="contact-item">
+        <i class="fa-brands fa-linkedin"></i>
+        <div><span class="contact-label">LinkedIn</span><a class="contact-value contact-link" href="#" >[ADD LINKEDIN URL]</a></div>
+      </div>
+      <div class="contact-item">
+        <i class="fa-brands fa-github"></i>
+        <div><span class="contact-label">GitHub</span><a class="contact-value contact-link" href="#">[ADD GITHUB URL]</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THANK YOU / FOOTER ================= -->
+<footer class="thankyou">
+  <div class="thankyou-inner" data-aos="fade-up">
+    <h2>Thank You</h2>
+    <p>Together, let's build a cleaner, greener and more sustainable future.</p>
+    <div class="thankyou-icons">♻️ 🌱 🌍</div>
+    <hr>
+    <p class="copyright">© 2026 Mohd. Altamash Ansari — E-Waste &amp; E-Management E-Portfolio</p>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- PDF Modal -->
+<div id="pdfModal" class="pdf-modal" hidden>
+  <div class="pdf-modal-inner">
+    <button id="pdfModalClose" class="pdf-modal-close" aria-label="Close">&times;</button>
+    <iframe id="pdfFrame" src="" title="Document preview"></iframe>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

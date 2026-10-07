@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initDarkMode();
   initBackToTop();
   initSkillBars();
-  initPdfChecks();
   initPdfModal();
 });
 

@@ -134,37 +134,6 @@ function initSkillBars(){
   items.forEach(item => io.observe(item));
 }
 
-/* ---------- Check whether activity / assignment PDFs actually exist ----------
-   If a linked PDF is missing, disable the View/Download buttons gracefully
-   and show a "PDF not added yet" note instead of a broken link. */
-function initPdfChecks(){
-  const blocks = document.querySelectorAll('.doc-actions');
-
-  blocks.forEach(block => {
-    const url = block.dataset.view;
-    if (!url) return;
-
-    fetch(url, { method: 'HEAD' })
-      .then(res => {
-        if (!res.ok) markMissing(block);
-      })
-      .catch(() => markMissing(block));
-  });
-}
-
-function markMissing(block){
-  block.querySelectorAll('a').forEach(a => {
-    a.classList.add('is-disabled');
-    a.style.pointerEvents = 'none';
-    a.style.opacity = '0.45';
-  });
-  const note = block.nextElementSibling;
-  if (note && note.classList.contains('doc-missing-note')){
-    note.hidden = false;
-    note.style.display = 'block';
-  }
-}
-
 /* ---------- PDF modal viewer (optional nicer preview instead of new tab) ----------
    Currently "View" buttons open target="_blank" per spec. This modal is wired up
    for future use — call openPdfModal(url) from anywhere if you'd rather preview
@@ -192,3 +161,4 @@ function initPdfModal(){
     if (e.key === 'Escape' && !modal.hidden) close();
   });
 }
+

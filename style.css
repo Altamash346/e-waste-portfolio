@@ -321,6 +321,8 @@ header{ position:fixed; top:0; left:0; right:0; z-index:1000; }
 .activity-4{ background: linear-gradient(150deg, #1B6B4A, #8BE28B); }
 .activity-5{ background: linear-gradient(150deg, #0E4A34, #18A558); }
 .activity-6{ background: linear-gradient(150deg, #1B6B4A, #8BE28B); }
+.activity-7{ background: linear-gradient(150deg, #0E4A34, #18A558); }
+
 .activity-icon{ font-size:44px; margin-bottom:10px; }
 .activity-number{ font-size:12px; letter-spacing:.12em; text-transform:uppercase; opacity:.85; font-weight:600; }
 .activity-card h3{ font-size:24px; margin:8px 0 4px; }
@@ -331,11 +333,16 @@ header{ position:fixed; top:0; left:0; right:0; z-index:1000; }
 .activity-card .btn-primary:hover{ background:var(--mint); }
 .activity-card .btn-outline{ border-color:rgba(255,255,255,.7); color:#fff; }
 .activity-card .btn-outline:hover{ background:#fff; color:var(--deep-green); }
+
 .doc-missing-note{
   margin-top:14px; font-size:12.5px; background:rgba(255,255,255,.15);
   padding:8px 12px; border-radius:8px; display:none;
 }
 .doc-missing-note code{ background:rgba(255,255,255,.25); padding:1px 5px; border-radius:4px; }
+/* Center the 7th activity card on desktop (3-column grid) */
+@media (min-width:1068px){
+  .activity-7{ grid-column:2; }
+}
 
 /* ---------- 11. ASSIGNMENTS ---------- */
 .assignment-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }

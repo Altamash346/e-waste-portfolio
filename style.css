@@ -320,6 +320,7 @@ header{ position:fixed; top:0; left:0; right:0; z-index:1000; }
 .activity-3{ background: linear-gradient(150deg, #0E4A34, #18A558); }
 .activity-4{ background: linear-gradient(150deg, #1B6B4A, #8BE28B); }
 .activity-5{ background: linear-gradient(150deg, #0E4A34, #18A558); }
+.activity-6{ background: linear-gradient(150deg, #1B6B4A, #8BE28B); }
 .activity-icon{ font-size:44px; margin-bottom:10px; }
 .activity-number{ font-size:12px; letter-spacing:.12em; text-transform:uppercase; opacity:.85; font-weight:600; }
 .activity-card h3{ font-size:24px; margin:8px 0 4px; }
